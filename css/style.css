@@ -1,0 +1,124 @@
+/* font-family: "Archivo", sans-serif; */
+/* font-family: "Red Hat Display", sans-serif; */
+
+
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+.header-page {
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* This ensures the header stays on top of other elements */
+    height: 5.5rem;
+}
+
+header h1 {
+    color: #333;
+    font-weight: 700;
+}
+
+header ul {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+header ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+header li a {
+    float: right;
+    color: #333;
+    text-decoration-color: purple;
+}
+
+header li a:hover {
+    color: purple;
+    text-decoration-color: #333;
+}
+
+header p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* work page */
+
+.work-header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.work-header h1 a:hover {
+    color: purple;
+}
+
+.work-header ul li {
+    font-weight: 700;
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+
+.work-desc a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.work p {
+    margin-bottom: 0.5rem;
+
+}
+
+.work-img {
+    width: 50%;
+    height: auto;
+}
+
+.little-note {
+    font-size: 0.5rem;
+}
+
+
+/* media queries */
+
+@media (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* This will center text-based content */
+    }
+
+    main>* {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header ul {
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    .work-img {
+        width: 100%;
+        height: auto;
+    }
+}
